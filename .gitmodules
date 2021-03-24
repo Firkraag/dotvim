@@ -7,3 +7,9 @@
 [submodule "bundle/vim-abolish"]
 	path = bundle/vim-abolish
 	url = https://github.com/tpope/vim-abolish.git
+[submodule "bundle/vim-xkbswitch"]
+	path = bundle/vim-xkbswitch
+	url = https://github.com/lyokha/vim-xkbswitch.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
