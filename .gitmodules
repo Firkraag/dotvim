@@ -15,4 +15,4 @@
 	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/LeaderF"]
 	path = bundle/LeaderF
-	url = https://github.com/Yggdroot/LeaderF
+	url = https://github.com/Yggdroot/LeaderF.git
