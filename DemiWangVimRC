@@ -3,10 +3,16 @@ syntax on
 filetype plugin indent on
 set number
 inoremap jj <esc>
-let mapleader=","
-let maplocalleader="\\"
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
+let mapleader="\\"
+let maplocalleader=","
+nnoremap <localleader>ev :vsplit $MYVIMRC<cr>
+nnoremap <localleader>sv :source $MYVIMRC<cr>
+"搜索文件名
+nnoremap <localleader>f :Leaderf file<cr> 
+"搜索整个工作目录
+nnoremap <localleader>sf :Leaderf rg<cr>
+"关闭文件
+nnoremap <localleader>c :x<cr>
 "注释
 autocmd FileType python nnoremap <buffer> <localleader>c I#<esc>
 autocmd FileType c,javascript nnoremap <buffer> <localleader>c I//<esc>
@@ -22,3 +28,7 @@ set shiftwidth=4 "一次缩进等于四个空格
 "autocmd InsertLeave * call libcall("/usr/local/lib/libxkbswitch.dylib", "Xkb_Switch_setXkbLayout", "")
 "autocmd InsertLeave * echo "abc"
 "autocmd InsertEnter * call libcall("/usr/local/lib/libxkbswitch.dylib", "Xkb_Switch_getXkbLayout", "")
+let g:input_method = libcall('/usr/local/lib/libxkbswitch.dylib', 'Xkb_Switch_getXkbLayout', '')
+autocmd InsertEnter *  call libcall('/usr/local/lib/libxkbswitch.dylib', 'Xkb_Switch_setXkbLayout', g:input_method)
+autocmd InsertLeavePre * let g:input_method = libcall('/usr/local/lib/libxkbswitch.dylib', 'Xkb_Switch_getXkbLayout', '') | call libcall('/usr/local/lib/libxkbswitch.dylib', 'Xkb_Switch_setXkbLayout', '0') 
+autocmd InsertLeave * echom "switched"
