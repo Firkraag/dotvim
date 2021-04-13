@@ -22,3 +22,4 @@ set shiftwidth=4 "一次缩进等于四个空格
 "autocmd InsertLeave * call libcall("/usr/local/lib/libxkbswitch.dylib", "Xkb_Switch_setXkbLayout", "")
 "autocmd InsertLeave * echo "abc"
 "autocmd InsertEnter * call libcall("/usr/local/lib/libxkbswitch.dylib", "Xkb_Switch_getXkbLayout", "")
+let g:Lf_GtagsAutoGenerate = 1
