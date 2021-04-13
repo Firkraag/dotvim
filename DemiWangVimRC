@@ -12,7 +12,7 @@ nnoremap <localleader>f :Leaderf file<cr>
 "搜索整个工作目录
 nnoremap <localleader>sf :Leaderf rg<cr>
 "关闭文件
-nnoremap <localleader>c :x<cr>
+nnoremap <localleader>x :x<cr>
 "注释
 autocmd FileType python nnoremap <buffer> <localleader>c I#<esc>
 autocmd FileType c,javascript nnoremap <buffer> <localleader>c I//<esc>
