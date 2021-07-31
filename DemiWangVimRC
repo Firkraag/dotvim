@@ -10,7 +10,7 @@ nnoremap <localleader>sv :source $MYVIMRC<cr>
 "搜索文件名
 nnoremap <localleader>f :Leaderf file<cr> 
 "搜索整个工作目录
-nnoremap <localleader>sf :Leaderf rg<cr>
+nnoremap <localleader>sg :Leaderf rg<cr>
 "关闭文件
 nnoremap <localleader>x :x<cr>
 "注释
@@ -19,6 +19,7 @@ autocmd FileType c,javascript nnoremap <buffer> <localleader>c I//<esc>
 autocmd FileType vim nnoremap <buffer> <localleader>c I"<esc>
 "运行
 autocmd FileType c nnoremap <buffer> <localleader>r :!gcc %<cr>
+autocmd FileType python iabbrev inf float("Inf")
 "空格与换行符
 set expandtab "在插入模式按下tab键和在normal模式按>键缩进都会插入空格
 set tabstop=4 "一个换行符等于四个空格
