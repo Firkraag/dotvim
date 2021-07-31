@@ -13,6 +13,8 @@ nnoremap <localleader>f :Leaderf file<cr>
 nnoremap <localleader>sf :Leaderf rg<cr>
 "关闭文件
 nnoremap <localleader>x :x<cr>
+"保存文件
+nnoremap <localleader>s :w<cr>
 "注释
 autocmd FileType python nnoremap <buffer> <localleader>c I#<esc>
 autocmd FileType c,javascript nnoremap <buffer> <localleader>c I//<esc>
