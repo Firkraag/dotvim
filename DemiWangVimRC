@@ -20,12 +20,13 @@ autocmd FileType python nnoremap <buffer> <localleader>c I#<esc>
 autocmd FileType c,javascript nnoremap <buffer> <localleader>c I//<esc>
 autocmd FileType vim nnoremap <buffer> <localleader>c I"<esc>
 "运行
-autocmd FileType c nnoremap <buffer> <localleader>r :!gcc %<cr>
+autocmd FileType c nnoremap <buffer> <localleader>r :!gcc %|./a.out<cr>
 autocmd FileType python iabbrev inf float("Inf")
 "空格与换行符
 set expandtab "在插入模式按下tab键和在normal模式按>键缩进都会插入空格
 set tabstop=4 "一个换行符等于四个空格
 set shiftwidth=4 "一次缩进等于四个空格
+set autochdir "工作目录总是当前文件的目录
 "let g:XkbSwitchEnabled = 1
 "let g:XkbSwitchLib = '/Users/wq/bin/libxkbswitch.dylib'
 "autocmd InsertLeave * call libcall("/usr/local/lib/libxkbswitch.dylib", "Xkb_Switch_setXkbLayout", "")
