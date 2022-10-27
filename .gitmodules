@@ -16,3 +16,27 @@
 [submodule "bundle/LeaderF"]
 	path = bundle/LeaderF
 	url = https://github.com/Yggdroot/LeaderF.git
+[submodule "bundle/defx"]
+	path = bundle/defx
+	url = https://github.com/Shougo/defx.nvim
+[submodule "bundle/vim-hug-neovim-rpc"]
+	path = bundle/vim-hug-neovim-rpc
+	url = https://github.com/roxma/vim-hug-neovim-rpc
+[submodule "bundle/nvim-yarp"]
+	path = bundle/nvim-yarp
+	url = https://github.com/roxma/nvim-yarp
+[submodule "bundle/deoplete"]
+	path = bundle/deoplete
+	url = https://github.com/Shougo/deoplete.nvim
+[submodule "bundle/deoplete-jedi"]
+	path = bundle/deoplete-jedi
+	url = https://github.com/deoplete-plugins/deoplete-jedi
+[submodule "bundle/jedi-vim"]
+	path = bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim
+[submodule "bundle/deoplete-clangx"]
+	path = bundle/deoplete-clangx
+	url = https://github.com/Shougo/deoplete-clangx
+[submodule "bundle/deoplete-clang"]
+	path = bundle/deoplete-clang
+	url = https://github.com/deoplete-plugins/deoplete-clang
